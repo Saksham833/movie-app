@@ -12,9 +12,3 @@
   from = "/*"
   to = "/index.html"
   status = 200
-
-# Force React router to handle routes
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
