@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Group, Text, Container, Burger, rem, Button } from '@mantine/core';
+import { Group, Text, Container, Burger, Button } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconMovie } from '@tabler/icons-react';
 

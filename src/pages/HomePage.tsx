@@ -9,7 +9,6 @@ import {
   Button,
   Image,
   Center,
-  Stack,
   Loader,
   ActionIcon,
 } from '@mantine/core';

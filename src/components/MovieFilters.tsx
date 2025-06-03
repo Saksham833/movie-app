@@ -118,41 +118,33 @@ export const MovieFilters = ({ filters, onFilterChange }: MovieFiltersProps) => 
     onFilterChange({ query: '' });
   };
 
-  const handleYearChange = (value: string | null) => {
-    onFilterChange({ year: value || '' });
-  };
+  // const currentYear = new Date().getFullYear();
+  // Unused but might be needed in the future
+  // const _years = Array.from({ length: 50 }, (_, i) => (currentYear - i).toString());
 
-  const handleTypeChange = (value: string | null) => {
-    onFilterChange({ type: (value as "movie" | "series") || 'movie' });
-  };
+  // Keeping this function for future use
+  // const _handleClearFilters = () => {
+  //   onFilterChange({
+  //     query: '',
+  //     year: '',
+  //     genre: '',
+  //     type: 'movie',
+  //     ratingMin: '',
+  //     ratingMax: '',
+  //   });
+  //   setSearch('');
+  //   setActiveGenre('');
+  // };
 
-  const handleRatingMinChange = (value: string | number) => {
-    onFilterChange({ 
-      ratingMin: value !== '' && value !== undefined ? value.toString() : '' 
-    });
-  };
+  // Keeping this function for future use
+  // const _handleTypeChange = (value: string | null) => {
+  //   onFilterChange({ type: (value as "movie" | "series") || 'movie' });
+  // };
 
-  const handleRatingMaxChange = (value: string | number) => {
-    onFilterChange({ 
-      ratingMax: value !== '' && value !== undefined ? value.toString() : '' 
-    });
-  };
-
-  const handleClearFilters = () => {
-    onFilterChange({
-      query: '',
-      year: '',
-      genre: '',
-      type: 'movie',
-      ratingMin: '',
-      ratingMax: '',
-    });
-    setSearch('');
-    setActiveGenre('');
-  };
-
-  const currentYear = new Date().getFullYear();
-  const years = Array.from({ length: 50 }, (_, i) => (currentYear - i).toString());
+  // Keeping this function for future use
+  // const _handleYearChange = (value: string | null) => {
+  //   onFilterChange({ year: value || '' });
+  // };
 
   return (
     <Flex style={{  color: 'white', height: '100%' }}>
